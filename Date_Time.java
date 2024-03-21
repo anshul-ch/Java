@@ -73,5 +73,10 @@ public class Date_Time {
         LocalDate d1 = LocalDate.of(2020, 6, 16);
         LocalDate result = d1.withYear(2023);
         System.out.println("With Year: " + result);
+
+        OffsetTime time5 = OffsetTime.now();
+        int m = time5.getMinute();
+        System.out.println("Current time: " + time5);
+        System.out.println("Minute: " + m);
     }
 }
